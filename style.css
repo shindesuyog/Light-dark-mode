@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --primary-color:#ffffff;
+    --secondary-color:#000000;
+}
+.dark-theme{
+    --primary-color:#000000;
+    --secondary-color:#ffffff;
+}
+
+#icon{
+    width: 30px;
+    cursor: pointer;
+}
+
+.hero{
+    height: 100vh;   /*vh is used for height from top to bottom of page*/
+    width: 100%;
+    background: var(--primary-color);
+}
+nav{
+    width: 84%;
+    margin: auto;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav ul{
+    flex: 1;
+    text-align: right;
+}
+.logo{
+    width: 100px;
+    cursor: pointer;
+}
+nav ul li {
+    display: inline;
+    list-style-type: style none; 
+    margin: 10px 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: large;
+}
+nav ul li a:hover{
+    color: red;
+}
+.info{
+    margin-left: 5%;
+    margin-top: 15%;
+}
+.info h1{
+    font-size: 70px;
+    color:var(--secondary-color);
+    margin-bottom: 20px;
+}
+
+span{
+    color: orangered;
+}
+.info p{
+    color: var(--secondary-color) ;
+    margin-bottom: 10px;
+}
+.info button{
+    background: var(--secondary-color) ;
+    padding: 10px 18px;
+    text-decoration: none;
+    color: var(--primary-color);
+    display: inline;
+    margin: 30px 0;
+    border-radius: 20px;
+}
+.info button:hover{
+    background-color: orangered;
+}
+.img-box{
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+}
+.img-box img{
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    transition: bottom 1s,left 1s;
+}
+.img-box:hover .back-img{
+    bottom: 40px;
+}
+.img-box:hover .main-img{
+    left: 54%;
+}
+.social-links a{
+    font-size: 30px;
+    color: var(--secondary-color);
+    margin-right: 20px;
+}
+.social-links a:hover{
+    color: orangered;
+}
